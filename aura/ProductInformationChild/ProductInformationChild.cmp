@@ -1,0 +1,31 @@
+<aura:component >
+	<aura:attribute name="productName" type="String" />
+    <aura:attribute name="price" type="Decimal" />
+    <aura:attribute name="tableName" type="String" />
+    <aura:attribute name="homeCountry" type="String" />
+    <aura:attribute name="percent" type="Boolean" />
+    
+    <lightning:card>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                <thead>
+                    <tr class="slds-text-heading_label">
+                        <th scope="col"><div class="slds-truncate" title="type">{!v.tableName}</div></th>
+                        <th scope="col"><div class="slds-truncate" title="Name">{!v.homeCountry}</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">{!v.productName}</td>
+                        <td scope="row">
+                            <aura:if isTrue="{! v.percent }" >
+                                <lightning:formattedNumber value="{! v.price / 100 }" style="percent" maximumFractionDigits="2" />
+                                <aura:set attribute="else">
+                                    <lightning:formattedNumber value="{! v.price }" style="currency"/>
+                                </aura:set>
+                            </aura:if>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </lightning:card>
+</aura:component>

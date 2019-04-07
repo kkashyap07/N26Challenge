@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ATM_Fee_in_other_currencies</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ATM Fee in other currencies</shortDescription>
+        <value>ATM Fee in other currencies</value>
+    </labels>
+    <labels>
+        <fullName>CARD_REPLACEMENT_COST</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CARD REPLACEMENT COST</shortDescription>
+        <value>CARD REPLACEMENT COST</value>
+    </labels>
+    <labels>
+        <fullName>Cost_per_Calendar_Month</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cost per Calendar Month</shortDescription>
+        <value>Cost per Calendar Month</value>
+    </labels>
+</CustomLabels>
